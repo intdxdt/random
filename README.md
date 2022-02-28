@@ -1,5 +1,6 @@
 # random
 random utils for go
+
 ## random string 
 generates an alpha numeric random string 
 ```go
