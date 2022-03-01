@@ -7,8 +7,8 @@ import (
 
 const charSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
-func init() {
-	rand.Seed(time.Now().UnixNano())
+func Seed() {
+	rand.Seed(time.Now().UTC().UnixNano() + 1337)
 }
 
 func String(n int) string {
